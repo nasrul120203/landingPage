@@ -1,0 +1,27 @@
+.hero{
+    background: rgb(36, 1, 59);
+    .nav{
+        .logo{
+            color: white;
+        }
+        .menu{
+            ul{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                        display: block;
+                        color: white;
+                        text-decoration: none;
+                        padding: 10px;
+                        &:hover{
+                            color: yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col"]{
+    margin: 0 1.5%;
+}
+
+@for $i from 1 through 12{
+    .col#{$i}{
+        width: (100%/(12/$i))-3%;
+    }
+}
+
+.ai-center{
+    align-items: center
+}
+.jc-spacebetween{
+    justify-content: space-between;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-custom{
+    position: relative;
+    width: 140%;
+    bottom: -10px
+}
+@import "./hero";
+@import "./main";
+@import "./feature";
